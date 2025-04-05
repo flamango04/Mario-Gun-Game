@@ -1,8 +1,4 @@
-# Super Mario
-
-### Course: CSE 3902 AU24
-
-### Instructor: Neil Kirby
+# Mario Gun Game
 
 ### Team: Five-Guys
 
