@@ -1,0 +1,21 @@
+Author: Zhuoyang Li
+Date: 11/29/2024
+Sprint Number: 5
+Name of file being reviewed: SoundManager.cs
+Author of file being reviewed: Jingyu Fu
+
+Strengths:
+
+	1.	Clear Singleton Implementation
+The Singleton pattern is implemented correctly, ensuring that only one instance of SoundManager is created. The use of a private constructor and the static Instance property is clear and concise.
+	2.	Organization of Sound Resources
+The separation of sound effects and background music into distinct dictionaries (soundEffects and backgroundMusic) improves readability and maintainability.
+
+Suggestions for Improvement:
+
+	1.	Reduce Repetition in Loading Methods
+The LoadAllBGM and LoadAllSFX methods contain repetitive calls to LoadBackgroundMusic and LoadSoundEffect. Refactor these methods to use helper methods or data-driven design (e.g., loading from an external configuration file or XML).
+
+	2.	Error Handling
+Methods like PlaySoundEffect, PlayBGM, and PlayBackgroundMusic rely on the existence of the key in the dictionaries but don’t handle cases where the key is missing. Consider adding error handling or logging to make debugging easier.
+Example:

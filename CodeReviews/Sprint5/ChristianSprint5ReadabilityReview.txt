@@ -1,0 +1,19 @@
+Author: Christian Blue
+Date: 11/29/2024
+Name of file being reviewed: 
+Author of file being reviewed: Zhuoyang Li + Aidan Whitlatch
+Time taken to review: 20 mins
+
+What is readable: 
+All of the short methods towards the bottom of the file are very short and
+readable, often just having one line for the return. The DeleteHammer method
+simply uses the Remove method from GameObjectManager to cleanly remove the
+object from the list of game items, and it is easily understood just by looking
+at it. The class implements multiple interfaces, and it is immediately clear how
+the object will behave in game.
+
+What is not readable:
+The Update method may be a little confusing without comments as to what the if
+statements actually do, and the calculating of the position variables could also
+benefit from a short comment explaining how and why it is done. Other than that
+small thing, the file is very readable and easy to grasp.

@@ -1,0 +1,21 @@
+Author: Christian Blue
+Date: 11/29/2024
+Name of file being reviewed: BulletBill.cs + BulletStateMachine.cs
+Author of file being reviewed: Hahn Choi + Zhuoyang Li
+Time taken to review: 20 mins
+
+Comments On Quality:
+
+Coupling: Low
+BulletBill has low coupling because every time it needs to access another 
+class, it is done using a method instead of a field. This is true for both BulletStateMachine and GameObjectManager, which are held as a field and a 
+global instance respectively. In the BulletStateMachine class, fields are all private and BulletBill related classes only interact with each other through methods.
+
+
+Cohesion: High
+Methods are all short and sweet, named well and only perform the thing they
+are named to do. Methods like Update and CreateEnemy help to make the function
+of each method very clear across both classes. All updates are kept in the update
+method, and methods that change the state do not update or draw anything.
+
+

@@ -1,0 +1,19 @@
+Author: Christian Blue
+Date: 11/8/2024
+Sprint Number: 4
+Name of file being reviewed: SoundManager.cs
+Author of file being reviewed: Hahn Choi
+Time taken on review: 15 minutes
+
+
+What is readable:
+Each accessor method is very short and easy to understand,
+with short parameter lists and clear naming. Methods are named
+in such a way that it is clear what they do, and variables
+are named in a way that it is clear what they store.
+
+What is not readable:
+The method LoadSpriteMachine() is a little long and could
+benefit from a few comments that walk thought the process,
+especially because it calls methods from another class called
+XmlReader.

@@ -1,0 +1,23 @@
+Author: Zhuoyang Li
+Date: 9/26/2024
+Sprint-2
+Reviewed class: ÒEnemyCycler.csÓ by Hahn ChoiÕ
+Focus on: Readability
+Reviewed time: 10 min
+
+Class Overview:
+The EnemyCycler class is designed to manage a collection of enemies (IEnemy objects) and allows cycling
+through them using the methods CycleEnemyLeft() and CycleEnemyRight(). This could be useful for debugging,
+viewing different enemies, or switching between them during gameplay.
+
+Strength:
+1. Simple Design:
+This class is easy to understand, with two main methods that cycle through a list of enemies in either
+direction.
+2. Names of objects, classes, methods are intuitive and descriptive, clearly telling the reviewer their
+functionality.
+3. The methods are focused on a single task, which contributes to the readability.
+
+Suggestions:
+1. Although all names are descriptive, comments are still a pivotal part of a class. Comments can help
+developers who are not part of the project become familiar with the code more quickly.

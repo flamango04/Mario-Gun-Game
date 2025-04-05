@@ -1,0 +1,25 @@
+Author: Zhuoyang Li
+Date: 10/18/2024
+Sprint-3
+Reviewed file: GameObjectManager.cs by Aidan
+Main Focus: Readablity
+Reviewed time: 10 min
+
+Overview: 
+It is a singleton responsible for managing all game objects, collisions, and their states in the game. 
+It interacts with the player object, tracks updateable and drawable game elements, handles block collisions, 
+and provides a central point for managing these elements across different frames.
+
+Strengths:
+	1.	Singleton Design Pattern: Ensuring a single instance of the GameObjectManager through the singleton pattern 
+      allows centralized management of game objects.
+	2.	Clear Separation of Responsibilities: Objects are divided into separate lists like Updateables, Drawables, 
+      Movers, and Static, making it clear how each object type is handled.
+	3.	Collision Handling Infrastructure: The class includes a collisionCommandMap and a CollisionDetection component, 
+      making it flexible for implementing collision-based game logic.
+
+Suggestions:
+  1. Simplify Conditionals in GetNearbyBlocks2: The GetNearbyBlocks2 method has multiple nested conditionals. 
+     Consider restructuring the logic for clarity.
+  2. Unused Methods: UnloadObjects is currently empty. If this is planned functionality, adding a TODO comment 
+     would be helpful for future maintainers.

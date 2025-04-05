@@ -1,0 +1,19 @@
+Author: Christian Blue
+Date: 10/19/24
+Sprint 3
+File Reviewed: GameObjectManager.cs
+Author of File: Jin Fu
+Time taken on review: 20 minutes
+
+Comments: 
+GameObjectManager is a singleton class that has low coupling and high cohesion.
+It contains useful lists of objects that referenced by the collision engine,
+but they are left public. There are very clear and concise clear methods, as
+well as a useful GetNearbyBlocks method that contains a short if structure to
+check columns one by one. Overall, the code is very high quality but would also
+benefit from some small optimizations.
+
+Suggested Changes:
+Add a few methods to add and delete single items from each list and make the
+list fields private. Other code that wants to add or delete should have to go 
+through a method to reduce coupling. 

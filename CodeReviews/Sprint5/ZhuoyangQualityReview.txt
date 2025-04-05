@@ -1,0 +1,23 @@
+Author: Zhuoyang Li
+Date: 11/29/2024
+Sprint Number: 5
+Name of file being reviewed: UniversalSpriteFactory.cs
+Author of file being reviewed: Aidan Whitlatch
+
+Strengths:
+
+	1.	Singleton Design Pattern
+The UniversalSpriteFactory class uses a Singleton design pattern correctly, ensuring there is a single instance of the factory throughout the application.
+	2.	Separation of Concerns
+The class organizes sprite-related responsibilities well, including loading textures, storing sprite data, and creating specific sprite instances.
+	3.	Scalability
+The XML-based sprite data loading mechanism (via LoadSpriteMachine) adds flexibility and makes it easier to extend or update sprites without modifying the source code.
+	4.	Comprehensive Functionality
+The factory provides a wide range of methods to retrieve different types of sprites, supporting both animated and static sprites, with clear purpose and structure.
+
+Suggestions for Improvement:
+	1.	Avoid Hardcoding File Paths in LoadSpriteMachine
+The spriteDataFile path is hardcoded, which makes the code less flexible and harder to port to other environments. Consider making the file path configurable or passing it as an argument.
+	2.	Avoid Global Variables (frames)
+The use of a global frames variable introduces unnecessary shared state, which could lead to bugs in multi-threaded scenarios or when modifying frames unexpectedly. Pass frames as a local variable or method argument.
+Example:

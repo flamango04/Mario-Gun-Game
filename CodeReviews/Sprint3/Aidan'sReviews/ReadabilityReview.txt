@@ -1,0 +1,23 @@
+Author: Aidan Whitlatch
+Date: 10/16/2024
+Sprint Number : 3
+Name of file being reviewed: Camera.cs
+Author of file being reviewed: Zhouyang Li
+Time taken to review: 20 mins
+
+What is readable: 
+  A majority of the variable names within this file are very descriptive and clearly get the point
+  across of what they are meant to represent. The variables of float cameraX and Vector2 Position
+  may be a little confusing becuase at first glance it may seem as if they are representing the
+  same data when in reality, cameraX is used to update the value of Position.
+
+
+What is not readable: 
+  Some of the built in MathHelper functions are not readable based on solely their name alone. 
+  It could be because I am not familiar with the functions provided in MathHelper but a comment
+  could be used to describe what the function is doing to make the code more readable for people
+  who are not familiar witht the MathHelper library. The same critique applies for the Matrix
+  functions used. The Transform variable helps signify what the overall goal of the functions is 
+  but it is very difficult to understand what Matrix.CreateTranslation() does. Comments could be 
+  provided to help make these function calls more readable.
+

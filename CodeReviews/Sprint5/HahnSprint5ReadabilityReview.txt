@@ -1,0 +1,13 @@
+Author: Hahn Choi
+Date: 11/29/2024
+Sprint Number: 5
+Name of file being reviewed: Bowser.cs
+Author of file being reviewed: Aidan Whitlatch, Jingyu Fu
+
+What is Readable: 
+The variables and function names have clearly defined meanings, that are descriptive in their functions (bowserBehaviour, OnTimedEvent, etc.)
+
+What is not Readable:
+While all the names do have clear definitions, there are a lot of variables and functions in the class, that cloud the readability somewhat.
+Maybe another class could have been used to help readability and cohesion, splitting the functions into different classes.
+Additionally, there is a magic number (patrolRange).

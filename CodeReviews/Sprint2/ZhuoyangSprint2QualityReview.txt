@@ -1,0 +1,40 @@
+Author: Zhuoyang Li
+Date: 9/26/2024
+Sprint-2
+Reviewed class: ÒBlockFactory.csÓ by Aidan Whitlatch
+Focus on: Quality
+Reviewed time: 20 min
+
+Review of the BlockFactory.cs:
+The BlockFactory class is designed to create different types of block objects for the
+game using the Factory design pattern. The class is generally well-structured and
+follows good practices for encapsulation and the Singleton pattern.
+
+Strengths:
+1. Singleton Pattern:
+This class correctly implements the Singleton pattern using a private constructor and
+static key word. 
+2. The LoadAllContent method is centralized, which is easy to manage and update
+textures in one place.
+3. Coupling: All dependencies are necessary and unavoidable for the class to function.
+The coupling degree is acceptable.
+4. Cohesion: The class has high cohesion in terms of its role as a factory for block
+creation.
+
+Suggestions:
+The LoadAllContent method introduces a slightly different responsibility, which is to
+load textures. While still related to block creation, it could be seen as a separate
+responsibility from object creation, potentially reducing cohesion slightly. Move the
+content loading responsibility to a separate class or service, such as a ContentLoader.
+The BlockFactory could then take the loaded textures as parameters or dependencies, 
+focusing solely on block creation.
+
+Hypothetically Scenario:
+Suppose we want to add a new block type, a “Timed Block,” which changes its appearance and behavior after a
+certain amount of time. This block should initially look like a regular block (e.g., questionBlock) but should
+switch to a “depleted” state (e.g., hitBlock) after a few seconds.
+The current implementation of BlockFactory is well-structured to accommodate the addition of new block types 
+like the “Timed Block” with minimal changes. Adding new methods to the factory and loading additional textures
+are straightforward processes. 
+
+

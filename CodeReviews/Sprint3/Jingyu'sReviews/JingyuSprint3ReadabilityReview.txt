@@ -1,0 +1,19 @@
+Author: Jingyu Fu
+Date: 10/17/2024
+Sprint Number: 3
+Name of the file being reviewed: CollisionDetection.cs
+Author of the file being reviewed: Aidan Whitlatch
+Time taken to review: 20 mins
+
+What is Readable:
+
+Using ToList() ensures modifications can be made while iterating without affecting the collection.
+
+Using the helper method GetHitBox() improves readability, as hitbox intersections are critical for collision checks.
+
+What is Not Readable:
+
+The use of many nested foreach loops makes the code hard to follow and adds complexity, especially when multiple game objects are involved.
+
+The enemy.Equals(enemy2) check could be more descriptive by separating logic or creating a specific method that checks if two enemies are the same.
+There’s some inconsistency with naming conventions ( marioColumn and fireballColumn could be better abstracted).

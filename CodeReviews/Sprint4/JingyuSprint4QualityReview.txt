@@ -1,0 +1,20 @@
+Author: Jingyu Fu
+Date: 11/6/2024
+Sprint Number: 4
+Name of file being reviewed : HUD.cs
+Author of file being reviewed : Zhuoyang Li
+Time Taken: 20min
+
+Code Quality Review:
+
+Coupling:
+The HUD class has moderate coupling, which could make it less modular if more dependencies were added. Additionally, directly referencing Game1.Instance limits flexibility and testability, as it ties the HUD implementation closely to the game instance.
+
+Cohesion:
+The class maintains good cohesion, primarily focused on rendering and updating the HUD elements such as score, coins, world, time, and lives. However, there’s a mix of game logic (e.g., handling Mario's death when time reaches zero) that could potentially be separated into the game or player logic to increase single responsibility.
+
+Suggestions for Improvement:
+
+Make coupling low: injecting Game1 as a dependency rather than directly calling Game1.Instance, so that HUD class can have a greater modularity and flexibility for future refactoring.
+
+Separating Responsibility(Time Management): The HUD’s responsibility could be clarified by moving the logic of Mario’s death due to time expiration outside the HUD. The time countdown could be adjusted to support different levels or modes with varying time limits by making the time variable configurable.

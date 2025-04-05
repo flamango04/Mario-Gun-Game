@@ -1,0 +1,14 @@
+Author: Hahn Choi
+Date: 11/8/2024
+Sprint Number: 4
+Name of file being reviewed : SoundEffectWrapper.cs
+Author of file being reviewed : Jingyu Fu
+Time Taken: 15 min
+
+What is Readable:
+
+All of the function names (Play, Stop, Pause, Resume, SetVolume) clearly define their function, and their contents are also direct and clearly understandable.
+
+What is Not Readable:
+
+There seems to be some dead comments in the code. Other than that, everything seems to be very readable.

@@ -1,0 +1,15 @@
+Author: Zhuoyang Li
+Date: 11/8/2024
+Sprint Number: 4
+Name of file being reviewed: SoundManager.cs
+Author of file being reviewed: Jingyu Fu
+
+1.	Singleton Pattern Implementation
+The Singleton pattern is implemented clearly, with a private constructor and a static Instance property, 
+which is easy to follow. The intent of restricting the class to a single instance is obvious.
+
+2. Method and variables naming are self-explanatory and clearly indicate their purpose.
+
+Suggenstion:
+
+1. Create helper methods to avoid repetitive LoadSoundEffect and LoadBackgroundMusic calls.

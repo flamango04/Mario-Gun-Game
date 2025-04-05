@@ -1,0 +1,25 @@
+Author of the Review: Jingyu Fu
+Date of the Review: 11/27/2024
+Sprint Number: 5
+Files Reviewed: Gun.cs, Bullet.cs, GunPickup.cs
+Author of Files: Aidan Whitlatch
+Time Taken for Review: 20 minutes
+Code Quality Review:
+
+Coupling:
+Moderate: Gun.cs depends heavily on the player's state (IPlayer), PlayerStateMachine, and GameObjectManager, While this is expected for gameplay features.
+
+
+Cohesion:
+High: All three classes are cohesive. They have single, focused responsibilities (weapon behavior, projectile logic, and item pickup).
+The Gun class could delegate more to utility classes or methods for computing rotations and offsets.
+
+Extensibility:
+High for Gun.cs and Bullet.cs: Adding more weapons or bullet types can be done by extending the respective classes or introducing new ones without modifying existing code.
+
+Refactor Gun.cs:
+Extract rotation and position calculations into helper methods or a separate utility class to simplify the Gun class.
+Consider introducing a Weapon interface if more weapon-related items are planned.
+
+Bullet Behavior:
+Introduce a system for bullet pooling to optimize performance when many bullets are being created and destroyed.

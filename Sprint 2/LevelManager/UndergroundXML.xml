@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XNAContent>
+	<Asset Type = "MyDataTypes.LevelObjectData[]">
+		<Item>
+			<ObjectType>Player</ObjectType>
+			<ObjectName>Mario</ObjectName>
+			<Location>16 272</Location>
+		</Item>
+		
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>0 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>16 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>32 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>48 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>64 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>80 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>96 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>112 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>128 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>144 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>160 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>176 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>192 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>208 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>224 448</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>240 448</Location>
+		</Item>
+
+
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>0 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>16 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>32 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>48 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>64 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>80 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>96 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>112 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>128 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>144 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>160 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>176 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>192 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>208 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>224 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>240 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>256 464</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueGround</ObjectName>
+			<Location>256 448</Location>
+		</Item>
+
+
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 432</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 416</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 400</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 384</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 368</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 352</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 336</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 320</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 304</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 288</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>0 272</Location>
+		</Item>
+
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>64 432</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>64 416</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>64 400</Location>
+		</Item>
+
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>80 432</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>80 416</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>80 400</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>96 432</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>96 416</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>96 400</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>112 432</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>112 416</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>112 400</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>128 432</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>128 416</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>128 400</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>144 432</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>144 416</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>144 400</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>160 432</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>160 416</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>160 400</Location>
+		</Item>
+
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>160 272</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>144 272</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>128 272</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>112 272</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>96 272</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>80 272</Location>
+		</Item>
+		<Item>
+			<ObjectType>Block</ObjectType>
+			<ObjectName>BlueBrick</ObjectName>
+			<Location>64 272</Location>
+		</Item>
+
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>64 384</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>80 384</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>96 384</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>112 384</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>128 384</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>144 384</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>160 384</Location>
+		</Item>
+
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>64 352</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>80 352</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>96 352</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>112 352</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>128 352</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>144 352</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>160 352</Location>
+		</Item>
+
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>80 320</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>96 320</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>112 320</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>128 320</Location>
+		</Item>
+		<Item>
+			<ObjectType>Item</ObjectType>
+			<ObjectName>StaticCoin</ObjectName>
+			<Location>144 320</Location>
+		</Item>
+
+		<Item>
+			<ObjectType>Pipe</ObjectType>
+			<ObjectName>UndergroundPipe</ObjectName>
+			<Location>208 272</Location>
+		</Item>
+
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>Collider</ObjectName>
+			<Location>0 448</Location>
+			<SizeX>240</SizeX>
+			<SizeY>16</SizeY>
+		</Item>
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>Collider</ObjectName>
+			<Location>0 272</Location>
+			<SizeX>16</SizeX>
+			<SizeY>272</SizeY>
+		</Item>
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>Collider</ObjectName>
+			<Location>80 400</Location>
+			<SizeX>80</SizeX>
+			<SizeY>16</SizeY>
+		</Item>
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>Collider</ObjectName>
+			<Location>64 400</Location>
+			<SizeX>16</SizeX>
+			<SizeY>48</SizeY>
+		</Item>
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>Collider</ObjectName>
+			<Location>160 400</Location>
+			<SizeX>16</SizeX>
+			<SizeY>48</SizeY>
+		</Item>
+
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>Collider</ObjectName>
+			<Location>212 416</Location>
+			<SizeX>16</SizeX>
+			<SizeY>32</SizeY>
+		</Item>
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>Collider</ObjectName>
+			<Location>228 416</Location>
+			<SizeX>32</SizeX>
+			<SizeY>16</SizeY>
+		</Item>
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>Collider</ObjectName>
+			<Location>244 272</Location>
+			<SizeX>16</SizeX>
+			<SizeY>140</SizeY>
+		</Item>
+
+		<Item>
+			<ObjectType>Collider</ObjectType>
+			<ObjectName>UndergroundPipeCollider</ObjectName>
+			<Location>208 440</Location>
+			<SizeX>12</SizeX>
+			<SizeY>4</SizeY>
+		</Item>
+		
+
+		
+	</Asset>
+</XNAContent>

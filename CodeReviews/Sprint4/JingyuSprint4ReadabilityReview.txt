@@ -1,0 +1,15 @@
+Author: Jingyu Fu
+Date: 11/6/2024
+Sprint Number: 4
+Name of file being reviewed : HUD.cs
+Author of file being reviewed : Zhuoyang Li
+Time Taken: 20min
+
+What is Readable:
+
+Variable names like score, coins, time, and lives are self-explanatory and align well with the purpose of the HUD.
+The use of the singleton pattern (HUD.Instance) is straightforward and easy to understand for a shared resource.
+
+What is Not Readable:
+
+The hard-coded time values (e.g., time = 400, timer = 1.5f in ScorePopup) could be extracted as constants or configurable parameters for better readability and easier maintenance.

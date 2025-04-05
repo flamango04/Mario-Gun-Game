@@ -1,0 +1,17 @@
+Author: Christian Blue
+Date: 9/26/2024
+Sprint 2
+Reviewed class: KeyboardControl.cs
+Author of file being reviewed: Zhuoyang Li
+Time taken of review: 15 minutes
+
+Coupling: Low
+
+All of the variables in KeyboardControl are handled within the class without any outside class information. KeyboardControl uses the ICommand interface to register actions to key presses instead of concrete classes, which makes the code simple and durable.
+
+Cohesion: High
+
+All of the code in the KeyboardControl class is relevant to its purpose. The class only contains private 3 fields, each for mapping keys to commands. The only methods in the class are for registering commands, updating the keyboard, and clearing commands, making this code very cohesive.
+
+Other Comments:
+There is a small foreach/if-else structure for executing commands based on previous key states, but it is short, well commented, and easy to understand.

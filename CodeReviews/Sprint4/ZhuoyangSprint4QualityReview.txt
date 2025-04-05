@@ -1,0 +1,23 @@
+Author: Zhuoyang Li
+Date: 11/8/2024
+Sprint Number: 4
+Name of file being reviewed: CollisionResponse.cs
+Author of file being reviewed: Aiden Whitlatch
+
+Coupling: Moderate
+This class has a moderate level of coupling due to its reliance on other classes like GameObjectManager, ICollideable, and ICommands. It depends on
+GameObjectManager to get the collisionDict dictionary and to store command mappings. Additionally, it heavily utilizes reflection to dynamically load types from 
+other classes based on XML configuration, which increases coupling because any change in the structure or naming of commands and types would directly affect the
+functioning of CollisionResponse.
+
+Cohesion: Low
+The CollisionResponse class combines several responsibilities. It not only handles collision responses but also parses XML to load a dictionary of collision types
+and commands. This violates the Single Responsibility Principle, as it mixes configuration loading logic with runtime collision handling logic. By combining these
+roles, the class is less cohesive and more challenging to maintain, as modifications to either collision handling or XML parsing would require changes in the same 
+class.
+
+Suggestions for Improvement:
+A good improvement would be to separate the configuration loading logic from the collision response handling. Creating a dedicated CollisionConfigLoader class to
+parse the XML and populate collisionDict would reduce CollisionResponse’s responsibilities, making it more cohesive and focused on handling collisions. The new 
+CollisionConfigLoader class could be responsible for reading and managing collision data, and CollisionResponse could simply call this loader to retrieve the 
+necessary dictionary.

@@ -1,0 +1,17 @@
+Author: Aidan Whitlatch
+Date: 11/08/2024
+Name of file being reviewed: StaticCoin.cs
+Author of file being reviewed: Christian Blue
+Time taken to review: 20 mins
+
+What is readable: 
+  All of the variables names are well named so there is no confusion when trying to understand what this variables
+  represent in the game. The functions are also well named and clearly illustrate what their intended purpose is. 
+
+What is not readable: 
+  The implementation of some functions could lead to confusion if someone were to read this code that was not familiar 
+  with C#. For example, in the GetCollisionType() function, the return line of "return typeof(StaticCoin).name" could be
+  difficult to understand if the reader is not familiar with the C# type system. A simple comment could be added above this
+  line to allow readers who may not familiar with the C# type system to understand the code. The DeleteItem function could
+  also be more readable as the reader as not idea what the static coin is being removed from in gameObjectManager.
+  There is no indication that it is being removed from lists contained within GameObjectManager.

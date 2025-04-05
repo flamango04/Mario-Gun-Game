@@ -1,0 +1,18 @@
+Author: Hahn Choi
+Date: 11/29/2024
+Sprint Number: 5
+Name of file being reviewed: Spawner.cs
+Author of file being reviewed: Jingyu Fu
+
+Comments on Quality:
+
+Coupling: Medium
+Although it is usually through singletons, the Spawner class does reference other classes extensively, for example with the game itself, or creating a new levelloader.
+
+Cohesion: High
+The Spawner class focuses on Mario and setting his spawning position, and teleporting him to it whenever needed. There is no other function of the class.
+
+
+Suggestions for Improvement:
+There are a lot of dead comments in the code that no longer seem to have purpose, that hinders readability. 
+There also seems to be functions that are not used anywhere: GetSpawnLocation() and Spawn().

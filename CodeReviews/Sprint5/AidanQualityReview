@@ -1,0 +1,23 @@
+Author: Aidan Whitlatch
+Date: 11/27/2024
+Name of file being reviewed: LavaBubble.cs
+Author of file being reviewed: Hahn Choi
+Time taken to review: 20 mins
+
+Comments On Quality:
+
+Coupling: Low
+The only class that the LavaBubble class needs in order to function is the LavabubbleStateMachine class. This does led to high coupling because this class
+is absolutely required in order for the LavaBubble class to complete its work.
+
+Cohesion: High
+The cohesion of this class is high because this class delegates most of its work to the LavabubbleStateMachine class which means most methods are quite simple
+as they are just having the LavabubbleStateMachine class do the work. The work that the LavaBubble class has to do does not take away from its cohesion as the methods
+are single purposed. Therefore the class overall fits the single responsibility standard which is what allows the class to have high cohesion.
+
+Suggestions for Improvement:
+A lot of the methods inherited from IEnemy are left empty which leads to a downturn in the quality of the code due to the unnessary bloat. To improve on this
+the LavaBubble class could inherit from Interfaces.IUpdateable, Interfaces.IDrawable, and ICollideable which provide all of the same functionality as IEnemy
+without needing to implement the unnessary functions supplied by IEnemy. Implementing LavaBubble in this way will improve the quality of the code by removing the
+unnecessary bloat within the current code. One other suggestion would be privatize the LavaBubbleStateMachine object as it seems that it is not being referenced 
+anywhere else within the code.

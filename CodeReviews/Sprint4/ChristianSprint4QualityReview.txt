@@ -1,0 +1,28 @@
+Author: Christian
+Date: 11/8/2024
+Sprint Number: 4
+Name of file being reviewed : WinState.cs
+Author of file being reviewed : Aidan Whitlatch
+Time taken on review: 15 min
+
+Code Quality Review:
+
+Coupling: Low
+The WinState class uses a KeyboardControl object that is passed in
+through the constructor, and a Camera object that is acquired with
+a GetCamera method from the Game1 singleton. The variable camera is 
+only used to update, and keyboardControl is only used to update and
+change the control scheme to disallow movement, meaning this class
+has low coupling.
+
+Cohesion: High
+The main difference between the win state and the playable state is
+that the controls are disabled during the win state. We still must
+Draw and Update during the win state, so these methods are necessary.
+Other than that, the only thing that the WinState class does is disable
+the keyboard controls for the object passed in on instantiation, meaning
+it is very cohesive.
+ 
+
+Suggestions for Improvement:
+It could be made a little more clear why the win state

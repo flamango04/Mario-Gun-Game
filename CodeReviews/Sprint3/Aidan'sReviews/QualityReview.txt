@@ -1,0 +1,27 @@
+Author : Aidan Whitlatch
+Date : 10/16/2024
+Sprint Number : 3
+Name of file being reviewed : LevelLoader.cs
+Author of file being reviewed : Hahn Choi
+Time taken on review : 20 mins
+
+Comments on Quality : 
+
+Coupling : Low
+  LevelLoader only relies on the GameObjectManager class to add newly created objects into the
+  lists present within GameObjectManager which is absolutely necessary. In our current design,
+  there is no way to implement LevelLoader without adding to lists present in GameObjectManager.
+  This is the only class that LevelLoader relies on so this coupling is absolutely necessary.
+  Therefore, this class has low coupling because the coupling present is unavoidable. 
+Cohesion : High
+  LevelLoader has one job and that is to load all of designated objects from the XML file and then
+  add them to a GameObjectManager so these objects can be drawn/updated. The LevelLoader does not
+  take on any additional responsibilites besides that so it fulfills the single responsibility 
+  code metric implying that this class has high cohesion.
+
+Suggestions for Improvement: 
+  One suggestions is allow the levelloader to populate dictionaries within the factories so
+  that the data specified within the levelfile will determine locations/sizes of sprites. This
+  would allow our entire art system to become more modular as data files could be swapped out
+  resulting in an entire new set of artwork being displayed on the screen. The same could
+  be done for controls used for the game.

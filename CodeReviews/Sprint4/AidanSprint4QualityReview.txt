@@ -1,0 +1,28 @@
+Author: Aidan Whitlatch
+Date: 11/08/2024
+Sprint Number: 4
+Name of file being reviewed: UniversalSpriteFactory.cs
+Author of file being reviewed: Hahn Choi
+Time taken on review: 20 min
+
+Comments On Quality:
+
+Coupling: Low
+This class loads all of the data into a dictionary for the sprite factory when the data is initialized. This dictionary
+is then utilized throughout the functions within the class. This allows the class to have low coupling as the class does not 
+lean on any other classes to get its job done.
+
+Cohesion: Moderate
+This class seemingly performs 2 jobs at once. It loads the spriteData dictionary with data read in from an xml file and has
+a multitude of fuctions that return various sprites when called. This goes against the Single Responsibility rule assocaited 
+with classes in our project. The dictionary loading could be abstracted to an additional class to increase cohesion among 
+the classes. 
+
+Suggestions for Improvement: 
+As mentioned in the cohesion comments, the spriteData dictionary loading could be abstracted to an additional class to 
+separate the 2 jobs of the UniversalSpriteFactory class into two distinct classes. This allows each class to have a
+single responsibility which is emphasis of high cohesion classes. I'm not completely sure if this abstraction is needed
+as the new class will only be used once and then never again. The class would not be modular because the act of populating
+the spriteData dictionary is tailored to how the data is represented in the xml file. This could be why the class was 
+originally designed to load in the data once the UniversalSpriteFactory was instantiated because the data is so heavily 
+related to that specific class. 

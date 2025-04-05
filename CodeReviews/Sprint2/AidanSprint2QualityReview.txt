@@ -1,0 +1,32 @@
+Author : Aidan Whitlatch
+Date : 9/26/2024
+Sprint Number : 2
+Name of file being reviewed : "Koopa.cs"
+Author of file being reviewed : Jin Fu
+Time taken on review : 45 mins
+
+Comments on Quality:
+
+Coupling : Low
+  This class only implements one intereface which is IEnemy which is absolutely required. The
+  class does not overly depend on any other classes present with in the project and thus it 
+  automatically has low coupling as it does not rely on other classes to achieve its
+  designated job.
+
+Cohesion : Low
+  This class seemingly takes on a multitude of jobs/responsibilities. The class seems to be 
+  drawing/updating as a sprite would and then it also handles all of the Koopa's states
+  and transisitions to those states within the same class. Thus the Koopa class is taking on the
+  responsibilites of a koopa state machine and a sprite. This doubling of responsibilities
+  goes against the Single Responsibility idea which is what leads to the low cohesion.
+
+Suggestions for Improvement:
+  A suggestion would be to split the Koopa.cs into two separate classes. One class would act as a
+  statemachine which determines how the Koopa object should be moved from state to state. This 
+  "Koopa state machine" would need to have an ISprite private member that is changed whenever
+  there is a state transition. This current "Koops.cs" file could be reworked to call these state
+  machine functions such as ChangeDirection() to update the koopa's current sprite. The new "Koopa.cs"
+  would be in charge of when to change directions (it reaches the end of the screen) this lets the 
+  state machine only be in charge of states while the Koopa.cs file can dictate when these state
+  changes need to happen. This way of thinking may be wrong application for sprint2 but I feel that
+  this changes would be beneficial for the future Sprints.

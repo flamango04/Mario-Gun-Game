@@ -1,0 +1,16 @@
+Author : Jingyu Fu
+Date : 9/26/2024
+Sprint Number : 2
+Name of file being reviewed : "MarioSpriteFactory.cs"
+Author of file being reviewed : Aidan Whitlatch
+Time taken on review : 30 mins
+
+Coupling: Medium
+MarioSpriteFactory is responsible for creating all the Mario sprites.
+Tightly coupled with the ISprite implementations(StaticMarioSprite, AnimatedMarioSprite).
+- Better to add few abstractions in order to reduce coupling and apply SOLID principles.(add abstractions so that if we want to add new states of mario in the future we dont have to change the code)
+
+Cohesion: High
+The class has high-level cohesion, as it focuses on managing the sprites for Mario and fireballs. 
+- Need refactoring, like puttingh fireball-related methods to another factory (ProjectileFactory) could help reduce the responsibilities handled in this class.
+

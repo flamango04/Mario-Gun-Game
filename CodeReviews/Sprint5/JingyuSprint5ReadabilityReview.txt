@@ -1,0 +1,25 @@
+Readability Review
+Author of the Review: Jingyu Fu
+Date of the Review: 11/27/2024
+Sprint Number: 5
+Files Reviewed: Gun.cs, Bullet.cs, GunPickup.cs
+Author of Files: Aidan Whitlatch
+Time Taken for Review: 30 minutes
+
+What is Readable:
+
+Variable Names: Clear variable names like firePoint, rotation, playerFacing, and offset in Gun.cs. XPos, YPos, and Velocity in GunPickup.cs and Bullet.cs are consistent and follow good naming conventions for position and motion.
+
+Separation: Each class (Gun, Bullet, and GunPickup) encapsulates its responsibilities effectively.
+Gun.cs focuses on the weapon's functionality, while Bullet.cs handles the projectile behavior, and GunPickup.cs deals with the item pickup mechanics.
+
+GameObjectManager Integration: Use of GameObjectManager to manage instances of bullets and pickups is clear and aligns well with the architecture of the project.
+
+
+What is Not Readable:
+
+Rotation Updates: The UpdateRotation method in Gun.cs has dense trigonometric calculations and clamping logic, Breaking it into smaller methods (e.g., CalculateRotation and ClampRotation) would improve readability.
+
+Lack of Comments for Calculations: In Gun.cs, some methods lack comments explaining the mathematical operations.
+
+Magic Numbers: numbers like heightScale = 0.375f in Gun.cs and timer = 1.5f in ScorePopup are magic numbers.

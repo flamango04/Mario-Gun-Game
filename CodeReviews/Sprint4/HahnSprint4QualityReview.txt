@@ -1,0 +1,20 @@
+Author: Hahn Choi
+Date: 11/8/2024
+Sprint Number: 4
+Name of file being reviewed : SoundManager.cs
+Author of file being reviewed : Jingyu Fu
+Time Taken: 20 min
+
+Code Quality Review:
+
+Coupling: Low
+SoundManager does reference the XNA MediaPlayer class in order to manage the game's music and sound.
+Other than that, there is little to no coupling between SoundManager and the other classes in the game.
+
+Cohesion: High
+The SoundManager is a singleton, which does mean that there are problems with cohesion inherent with the singleton pattern.
+But otherwise, the file is cohesive by sticking to its name, SoundManager, and performing all of the functions revolving around sfx and music, such as loading or stopping whenever necessary. 
+
+Suggestions for Improvement:
+
+Remove dead code/comments by removing the unnecessary bits. 

@@ -1,0 +1,13 @@
+Author: Christian Blue
+Date: 9/26/2024
+Sprint 2
+Reviewed class: Game1.cs
+Author of file being reviewed: Everyone
+Time taken of review: 15 minutes
+
+Readability Review:
+
+There are lots of private variables at the top of the file that are not organized very well, and some of them aren't even used. 
+LoadContent() is also very crowded, as there is a lot of commented out code that could be deleted. Declarations of enemy, item, and block lists could also be hidden better with #region as we saw in class this week. 
+Keyboard RegisterCommand methods are okay for now but will need to move into level loader eventually. 
+Draw() and Update() also contain some commented out code that coule be removed. Christian needs to change the block drawing system to cycle like item and enemy.

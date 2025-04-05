@@ -1,0 +1,16 @@
+Author: Hahn Suh Choi
+Date: 10/17/2024
+Sprint Number: 3
+Name of the file being reviewed: MarioCollideTopCommand.cs
+Author of the file being reviewed: Christian Blue
+Time taken on review: 20 mins
+
+Comments on Quality:
+
+Coupling: High
+The command is highly coupled with the Player class, and refers to it in almost every part of the code.  
+However, this makes sense as the command detects and acts upon collisions with mario, and must access the player class to do so. 
+I don't think there is a way to refactor this code to have less coupling, by the design of the command pattern.
+
+Cohesion: High
+The class only has two functions including the constructor, and as with all the other commands, has a clear .Execute() function that is executed when called. 

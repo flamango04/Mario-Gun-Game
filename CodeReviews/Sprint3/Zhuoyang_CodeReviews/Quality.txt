@@ -1,0 +1,29 @@
+Author: Zhuoyang Li
+Date: 10/18/2024
+Sprint-3
+Class Reviewed: CollisionDetection.cs By Aidan
+Main Focus: Quality
+Reviewed time: 10 min
+
+Overview:
+The CollisionDetection class is responsible for detecting and resolving collisions between game objects 
+using references to the GameObjectManager. This class plays a crucial role in maintaining gameplay mechanics, 
+such as player interactions with the environment and other objects. It leverages collision detection logic to 
+determine the side of collision and delegates the response to the CollisionResponse class.
+
+Strengths:
+1. Encapsulation of Collision Logic:
+    The class appropriately encapsulates collision detection logic. Having a separate class dedicated to 	 
+    detecting and resolving collisions improves separation of concerns.
+2. Decoupling Response Handling with CollisionResponse:
+    Delegating collision resolution to the CollisionResponse class ensures that the collision detection and 
+    response responsibilities are kept separate, enhancing the maintainability and readability of both components.
+3. Usage of GameObjectManager Singleton:
+    The class correctly utilizes the GameObjectManager singleton to access the game objects involved in collision detection, reducing redundancy.
+4. Cohesive Role:
+    The CollisionDetection class has high cohesion, focused on the singular responsibility of detecting and resolving collisions.
+
+Suggestions:
+1. Optimization of Loops:
+	The nested loops in the DetectCollision method (foreach over Movers and Static) might introduce performance 
+	bottlenecks, especially if there are many objects.

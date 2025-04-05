@@ -1,0 +1,17 @@
+Author : Hahn Suh Choi
+Date : 9/26/2024
+Sprint Number : 2
+Name of file being reviewed : "BlockFactory.cs"
+Author of file being reviewed : Christian Blue
+Time taken on review : 10 minutes
+
+
+Coupling : Low
+  The only thing the factory refers to is the content manager, in order to load the block textures in. Additionally, the factory uses a Singleton instance, allowing for low coupling when referenced by other classes. 
+
+Cohesion : High
+  The factory is cohesive in that it focuses solely on creating blocks and returning them whenever needed. 
+
+Miscellanous Comments:
+  
+I do wonder if there is a way to reduce the amount of content being loaded in; While it should be much of a problem for one level, I feel as if having textures for each different block could lead to an explosion in the data that needs to be managed. This would also help with complexity, as it would reduce the number of texture variables required to 1. 

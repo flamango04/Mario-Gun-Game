@@ -1,0 +1,13 @@
+Author: Hahn Suh Choi
+Date: 10/17/2024
+Sprint Number: 3
+Name of the file being reviewed: GameObjectManager.cs
+Author of the file being reviewed: Jingyu Fu
+Time taken to review: 15 mins
+
+What is Readable:
+The names of the lists are clear: updatables, drawables, movers, static all have fairly clear meanings in dealing with the collisions and their properties. 
+The functions are also mostly clear with simple and clear purposes and body, especially with the for loops. 
+
+What is Not Readable:
+Some of the names can be confusing, such as "GetNearbyBlocks2", as there is no GetNearByBlocks1 or any other such function. There is also some repeated code in that function, in the if-else statements. 

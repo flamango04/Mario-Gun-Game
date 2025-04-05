@@ -1,0 +1,43 @@
+ TODO: things this needs to do:
+            1. sort static collideables into columns
+            2. reject obvious non-collisions using rectangle.intersects (returns a boolean)
+            3a. check list of movers against all collideables in adjacent columns
+            3b. check direction of collision using rectangle.intersect (returns a rectangle)  
+
+
+            COLLISION RESPONSE:
+            - players collide with blocks, items, and enemies
+            - enemies collide with blocks, enemies
+            - items collide with blocks
+
+            table wise (xml file loaded by level loader)
+            movers      reciever        side    moverCommand    recieverCommand2
+
+            player      blockWithItem   right   moveMarioRight  null
+                                        left    moveMarioLeft   null
+                                        top     moveMarioUp     null
+                                        bottom  marioHitBlock   blockHit
+
+            player      blockNoItem     right   moveMarioRight  null
+                                        left    moveMarioLeft   null
+                                        top     moveMarioUp     null
+                                        bottom  marioHitBlock   blockHit
+
+            player      items           all     marioPowerUp    itemDelete
+
+            player      enemy           not top marioTakeDamage null
+                                        top     marioBounce     enemyTakeDamage
+
+            enemy       blocks          right   moveEnemyRight  null
+                                        left    moveEnemyLeft   null
+                                        top     moveEnemyUp     null
+                                        bottom  moveEnemyDown   null
+
+            enemy       enemy           any     changeDirection changeDirection
+
+            items       block           right   changeDirection null
+                                        left    changeDirection null
+                                        top     moveItemUp      null
+                                        bottom  moveItemDown    null
+        
+        

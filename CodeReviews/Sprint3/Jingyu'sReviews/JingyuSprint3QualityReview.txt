@@ -1,0 +1,18 @@
+Author: Jingyu Fu
+Date: 10/17/2024
+Sprint Number: 3
+Name of the file being reviewed: BlockCollisionResponse.cs
+Author of the file being reviewed: Aidan Whitlatch
+Time taken on review: 25 mins
+
+Comments on Quality:
+
+Coupling: Mid
+
+The class is coupled with objects, such as IPlayer, IEnemy, IBlock, and IItem. This direct coupling limits the flexibility of this class when it comes to adding new objects or adjusting the behavior.
+Reducing coupling would involve abstracting the collision response further by creating collision handlers for different types of game objects.
+
+Cohesion: Mid
+
+This class is used to respond to collisions, which is good, but it handles a lot of different cases. Splitting the collision responses into more specialized methods could increase cohesion.
+Refactor the class to extract some collision logic into dedicated collision handlers for Player, Enemy, and Item.

@@ -1,0 +1,14 @@
+Author : Jingyu Fu
+Date : 9/26/2024
+Sprint Number : 2
+Name of file being reviewed : "PlayerStateMachine.cs"
+Author of file being reviewed : Aidan Whitlatch
+Time taken on review : 30 mins
+
+What is Readable:
+The naming of variables like facing, pose, and health is clear and easy to understand.
+Methods are well-structured and easy to follow.
+
+What is Not Readable:
+Magic numbers, like 50f (MoveLeft(),MoveRight()), could be loaded from elsewhere to improve readability.
+

@@ -1,0 +1,19 @@
+Author : Aidan Whitlatch
+Date : 9/26/2024
+Sprint Number : 2
+Name of file being reviewed : "Star.cs"
+Author of file being reciewed : Hahn Choi
+Time taken to review : 20 mins
+
+What is Readable : 
+  All of the other variables are readable as the exactly illustrate their purpose. For example,
+  Texture, Velocity, and Position clearly illustrate their purpose within the sprite based on their
+  name alone. I also thought that the currentFrame and totalFrames variables were readable but that
+  I realized that might only be because of my familiariy of the project. They could be updated to
+  currentAnimationFrame and totalAnimationFrames to fully get the point across of what their exact
+  purpose is. 
+What is not Readable : 
+  The name of the ticks variable provides very little meaning as to what its purpose is. It also
+  is initialized to an int of one and then continiually set to be equal to one during the update 
+  loop. Maybe this was accidently left in or it will be used further down the road but at the current
+  moment, it is not clear what its purpose is. 

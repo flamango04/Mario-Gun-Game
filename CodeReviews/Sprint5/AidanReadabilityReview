@@ -1,0 +1,15 @@
+Author: Aidan Whitlatch
+Date: 11/27/2024
+Name of file being reviewed: MoveablePlatform.cs
+Author of file being reviewed: Christian Blue
+Time taken to review: 20 mins
+
+What is readable: 
+All of the variable names used are quite descriptive and clearly convey their intended purpose within the code. This similary applies to the 
+function names as their given names are clear enough that additional clarifying comments are not needed. 
+
+What is not readable:
+I can not find anything within this code that I personally find not readable. All of the code within the functions is simple which leads to easy
+understanding by the readers who are not familiar with the project. The only thing that I could consider slighly undereadable would be the variable
+range. It could be given a slightly more descriptive name that clearly illustrates that it details the range of movement along the x axis that the
+platform can move in. Other than that one very small nitpick, I really can not think of any other things that are unreadable in this code.

@@ -1,0 +1,13 @@
+Author : Hahn Suh Choi
+Date : 9/26/2024
+Sprint Number : 2
+Name of file being reviewed : "Player.cs"
+Author of file being reviewed : Aidan Whitlach
+Time taken to review : 15 minutes
+
+Readable : 
+There are several public variables that seem to be used by various states and sprites. Their names are generally clear, (xPos/yPos for mario's position, PlayerState and PhysicsState for his state's, etc.). All of the function names are descriptive as well, clearly stating what action they are associated with. 
+
+Not Readable : 
+The boolean variable "isCrouching" does not seem to be used, at least at the moment. Even in the function Crouch(), isCrouching is not updated anywhere. Additionally, there is a magic number 2, which could be explained further; The maximum number of fireballs that Mario can throw at a time is indeed 2, but it could be initialized as a final variable. 
+

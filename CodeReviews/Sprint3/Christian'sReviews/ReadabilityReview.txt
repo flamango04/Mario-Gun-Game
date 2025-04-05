@@ -1,0 +1,17 @@
+Author: Christian Blue
+Date: 10/19/24
+Sprint 3
+File Reviewed: LevelLoader.cs
+Author of File: Hahn Choi
+Time taken on review: 15 minutes
+
+Strengths:
+Method names are all very clear, and method bodies contain simple switch case
+statements that are easy to follow. It is easy to tell that the LevelLoader
+adds new objects by calling the GameObjectManager singleton and correctly
+throws an error when an input is not recognized.
+
+Suggestions:
+The LoadLevel method would really benefit from some comments explaining what
+each block of code does, since there are lots of XmlReader methods being called
+that do not have clear meaning in this code.
