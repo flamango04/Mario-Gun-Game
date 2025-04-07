@@ -154,7 +154,7 @@ The project progress management was also better than last time, we created diffe
 
 * Mario can clip out of bounds if he kicks the shell near a wall. The collision with the shell will cause mario to be push out of bounds.
 * When little mario is running and crouch is held, mario will be stuck in the run animation even though he is not moving.
-* xml file from the XMLgenerator might generates a file start with:
+* xml file from the XMLgenerator might generate a file that starts with:
   ```xml
    line1: <?xml version="1.0" encoding="utf-8" ?>
    line2: <?xml version="1.0" ?>"
